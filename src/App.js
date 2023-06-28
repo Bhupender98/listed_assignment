@@ -5,12 +5,17 @@ import Home from './Components/Login_Logout/Home';
 import { useAuth0 } from "@auth0/auth0-react";
 
 const App = () => {
-  const {user, isAuthenticated} = useAuth0();
+  const { user, isAuthenticated } = useAuth0();
   console.log(user)
   return (
     <div>
-    <Home/>
-      {/* <Dashboard/> */}
+      {
+        isAuthenticated ? (
+          <Dashboard />
+        ) : (
+          <Home />
+        )
+      }
     </div>
   )
 }

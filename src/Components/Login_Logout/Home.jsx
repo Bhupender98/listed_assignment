@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <div className='home-container'>
-      <button onClick={() => loginWithRedirect()}>Log In</button>
+      {/* <button onClick={() => loginWithRedirect()}>Log In</button> */}
       <div className="board">
         <h1>Board.</h1>
       </div>
