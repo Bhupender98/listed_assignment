@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$myColor: #f5f5f5;
+$icon: #999;
+
+// home container
+.home-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  .board {
+    width: 30%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: #fff;
+      font-size: 72px;
+      font-family: Montserrat;
+      font-weight: 700;
+    }
+  }
+  .login {
+    width: 70%;
+    height: 100%;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login-container {
+      min-height: 60vh;
+      width: 30vw;
+      h2 {
+        font-size: 36px;
+        line-height: 44px;
+        text-align: left;
+      }
+      p {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        margin: 0.5rem 0;
+      }
+      .google-login {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          width: 45%;
+          padding: 0.4rem;
+          border: none;
+          border-radius: 10px;
+          background: #fff;
+        }
+      }
+      form {
+        width: 100%;
+        height: auto !important;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 25px;
+        label {
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          text-align: left;
+        }
+        input {
+          height: 40px;
+          width: 100%;
+          outline: none;
+          border: none;
+          height: 40px;
+          border-radius: 10px;
+          background: #f5f5f5;
+          margin: 1rem 0 !important;
+          padding-left: 1rem;
+          font-size: 16px;
+          font-weight: 400;
+        }
+        a {
+          font-family: Lato;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          text-align: left;
+          text-decoration: none;
+          color: #346BD4;
+
+        }
+        button {
+          height: 40px;
+          border-radius: 10px;
+          width: 100%;
+          background: #000000;
+          margin-top: 1rem;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 20px;
+          color: #ffffff;
+          border: none;
+        }
+      }
+      .register{
+        text-align: center;
+        margin: 1.5rem 0;
+      }
+    }
+  }
+}
+
+// dashboard container
+.dasboard-container {
+  height: 100vh;
+  width: 100%;
+  background: $myColor;
+  color: #fff;
+  display: flex;
+  .board-container {
+    height: 100%;
+    width: 20%;
+    border-radius: 30px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .list-container {
+      font-family: Montserrat;
+      font-weight: 700;
+      padding: 30px;
+      h1 {
+        font-size: 36px;
+      }
+      ul li {
+        list-style: none;
+        margin: 1.5rem 0;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+        }
+      }
+    }
+    .btns {
+      padding: 30px;
+      ul li {
+        list-style: none;
+        margin: 0.8rem 0;
+        a {
+          color: #fff;
+          font-size: 14px;
+          font-family: Montserrat;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  // main container for map and dashboard
+  .main_container {
+    height: 100%;
+    width: 80%;
+    padding: 0 2rem;
+    // navbar styles start
+    .nav-bar {
+      height: 8vh;
+      width: 100%;
+      font-family: Montserrat;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+      h1 {
+        color: #000;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .search-profile {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .search-box {
+          width: 180px;
+          height: 30px;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 25px;
+          input {
+            height: 100%;
+            width: 85%;
+            border: none;
+            outline: none;
+          }
+        }
+        #avatar {
+          height: 45px;
+          width: 45px;
+          border-radius: 50%;
+        }
+      }
+    }
+    // navbar end
+    // cards container start
+    .cards-container {
+      height: 20vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0;
+      .card {
+        height: 100%;
+        width: 22%;
+        border-radius: 15px;
+        padding: 1.44rem;
+        color: #000;
+        img {
+          margin-left: 8rem;
+        }
+        p {
+          font-size: 14px;
+        }
+        h2 {
+          font-size: 24px;
+          font-family: Open Sans;
+          font-weight: 700;
+        }
+      }
+    }
+    // cards container end
+
+    // pie chart and scduled activities
+    .pie_chart_schedule {
+      width: 100%;
+      height: auto;
+      display: flex;
+      margin-top: 1.5rem;
+      justify-content: space-between;
+      .pie_chart {
+        width: 45%;
+      }
+      // schedule secction
+      .schedule {
+        width: 45%;
+        height: auto;
+        .title_div {
+          display: flex;
+          justify-content: space-between;
+          width: 80%;
+        }
+        .timing {
+          margin: 0.7rem 0;
+        }
+        h2 {
+          color: #000;
+          font-size: 18px;
+          font-family: Montserrat;
+          font-weight: 700;
+        }
+        h3 {
+          color: #666;
+          font-size: 14px;
+          font-family: Lato;
+          font-weight: 700;
+        }
+        p {
+          color: $icon;
+          font-size: 12px;
+          font-family: Lato;
+        }
+        .meetings {
+          padding: 0.4rem 0.8rem;
+          min-height: 66px;
+          border-left: 5px solid #9bdd7c;
+          margin-top: 1rem;
+        }
+        .operations {
+          min-height: 66px;
+          border-left: 5px solid #6972c3;
+          padding: 0.4rem 0.8rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
